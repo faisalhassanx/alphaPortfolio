@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Portfolio Application
 
-Things you may want to cover:
+Started: 06/04/2017
 
-* Ruby version
+Stack: Ruby-2.4.1, Rails 5.1.1, PgSQL
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Faisal Hassan
