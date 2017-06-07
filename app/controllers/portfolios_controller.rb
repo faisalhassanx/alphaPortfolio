@@ -1,7 +1,7 @@
 class PortfoliosController < ApplicationController
   
   def index
-    @portfolio = Portfolio.all
+    @portfolio_item = Portfolio.all
   end
   
   def show
@@ -36,7 +36,7 @@ class PortfoliosController < ApplicationController
   private
   
   def portfolio_params
-    params.require(:portfolio).permit(:title, :subtitle, :body, :main_image, :thumb_image)
+    params.require(:portfolio).permit(:title, :subtitle, :body)
   end
   
 end
