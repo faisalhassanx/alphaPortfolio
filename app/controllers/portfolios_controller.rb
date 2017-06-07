@@ -1,7 +1,7 @@
 class PortfoliosController < ApplicationController
   
   def index
-    @portfolio_items = Portfolio.all
+    @portfolio = Portfolio.all
   end
   
   def show
@@ -9,7 +9,7 @@ class PortfoliosController < ApplicationController
   end
   
   def new
-    
+    @portfolio = Portfolio.new
   end
   
   def edit
@@ -17,7 +17,12 @@ class PortfoliosController < ApplicationController
   end
   
   def create
-    
+    @portfolio = Portfolio.new(portfolio_params)
+    if @portfolio.save
+      redirect_to portfolios_path
+    else
+      render 'new'
+    end
   end
   
   def update
@@ -26,6 +31,12 @@ class PortfoliosController < ApplicationController
   
   def destroy
   
+  end
+  
+  private
+  
+  def portfolio_params
+    params.require(:portfolio).permit(:title, :subtitle, :body, :main_image, :thumb_image)
   end
   
 end
