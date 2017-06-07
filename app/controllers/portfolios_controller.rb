@@ -34,7 +34,8 @@ class PortfoliosController < ApplicationController
   end
   
   def destroy
-  
+    @portfolio_item.destroy
+    redirect_to portfolios_path
   end
   
   private
