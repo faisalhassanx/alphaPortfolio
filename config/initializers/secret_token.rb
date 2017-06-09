@@ -1,0 +1,1 @@
+AlphaPortfolio::Application.config.secret_key_base = 'c85cfae1b06eac188224244a54c5baf99b46085b2dea58cc7f426f625bb1e22924702fbc6a624937256bad7aab76c5a3d7093df08e05b4b2a99ca23ecc78e8f4'
