@@ -20,3 +20,4 @@
 
 # Hide secrets.yml
 /config/secrets.yml
+/config/secret_token.rb
