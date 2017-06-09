@@ -1,6 +1,6 @@
 10.times do |blog|
   Blog.create!(
-    title: 'Second Blog',
+    title: "My Blog: #{blog}",
     body: 'Everyday carry farm-to-table kale chips, selvage assumenda cloud bread 
            forage fugiat mixtape. Pinterest DIY hell of duis kale chips, pitchfork 
            adipisicing. Chillwave meh cornhole adipisicing, ugh fugiat occupy 
