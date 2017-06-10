@@ -5,4 +5,5 @@ class Blog < ApplicationRecord
   
   validates :title, presence: true, length: { in: 10..150 }
   validates :body,  presence: true, length: { in: 100..1000 }
+  belongs_to :topic
 end
