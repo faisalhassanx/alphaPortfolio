@@ -1,0 +1,27 @@
+html, body {
+    margin:0;
+    padding:0;
+}
+
+.deadend {
+	 background: black;
+	 margin: 0px;
+}
+.wrap{
+	 height: 589px;
+	 margin: 0 auto;
+	 position: relative;
+}
+.banner{
+	width: 343px;
+}
+.banner img{
+  display: block;
+  padding: 130px 490px;
+}
+
+.back {
+  padding: 10px 630px;
+  color: white;
+  letter-spacing: 2px;
+}

@@ -14,4 +14,6 @@ Rails.application.routes.draw do
   get '/contact' => 'pages#contact'
   
   root 'pages#home'
+  
+  get '*missing' => 'pages#missing'
 end
