@@ -19,6 +19,15 @@
   </div>
   <br />
   
+  <ul>
+    <%= f.fields_for :technologies do |tech| %>
+      <li>
+        <%= tech.label :name %>
+        <%= tech.text_field :name %>
+      </li>
+    <% end %>
+  </ul>
+  
   <div class="actions">
     <%= f.submit ( f.object.new_record? ? "Create Portfolio Item" : "Update Portfolio Item") %>
   </div>
