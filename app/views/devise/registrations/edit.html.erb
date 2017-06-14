@@ -16,7 +16,7 @@
   <br />
 
   <div class="field">
-    <%= f.label :password %> (leave blank for no change)<br />
+    <%= f.label :password %> (Leave blank for no change)<br />
     <%= f.password_field :password, autocomplete: "off" %>
     <% if @minimum_password_length %>
       <br />
@@ -38,10 +38,10 @@
   <br />
 
   <div class="actions">
-    <%= f.submit "Update" %>
+    <%= f.submit "Update Account" %>
   </div>
 <% end %>
 <br />
 
-<%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %>
+<%= button_to "Delete my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %>
 
