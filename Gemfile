@@ -12,8 +12,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'sprockets-rails', '~> 3.1.1'
 gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.2'
+gem 'bcrypt', '~> 3.1.7'
 # gem 'redis', '~> 3.0'
-# gem 'bcrypt', '~> 3.1.7'
 
 
 group :development, :test do
