@@ -16,7 +16,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'hirb', '~> 0.7.3'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
 # gem 'redis', '~> 3.0'
-
+gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
