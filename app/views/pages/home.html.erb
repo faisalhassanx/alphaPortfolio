@@ -1,11 +1,28 @@
 <h1>Homepage</h1>
-<h2>Hello, <%= current_user.first_name if current_user %></h2>
+
+<h2>Hello, <%= current_user.first_name %></h2>
 
 <h1><%= link_to 'Blog Posts', blogs_path %></h1>
-<p><%= @posts.inspect %></p>
+<p>
+  <% @posts.each do |post| %>
+    <%= post.title %><br />
+    <%= post.body %><br /><br />
+  <% end %>
+</p>
 
 <h1>Skills</h1>
-<p><%= @skills.inspect %></p>
+<p>
+  <% @skills.each do |skill| %>
+    <%= skill.title %><br />
+    <%= skill.percent_utilized %><br /><br />
+  <% end %>
+</p>
 
 <h1><%= link_to 'Portfolio', portfolios_path %></h1>
-<p><%= @portfolio_items.inspect %></p>
+<p>
+  <% @portfolio_items.each do |portfolio_item| %>
+    <%= portfolio_item.title %><br />
+    <%= portfolio_item.subtitle %><br /><br />
+  <% end %>
+  
+</p>

@@ -18,7 +18,6 @@ class PortfoliosController < ApplicationController
   
   def create
     @portfolio_item = Portfolio.new(portfolio_params)
-    
     if @portfolio_item.save
       redirect_to portfolios_path
     else
