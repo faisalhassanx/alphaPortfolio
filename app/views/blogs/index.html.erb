@@ -2,10 +2,13 @@
 
 <h1>Blogs</h1>
 
+<%= link_to 'New Blog', new_blog_path %>
+
 <table>
   <thead>
     <tr>
       <th>Title</th>
+      <th>Date Published</th>
       <th>Body</th>
       <th colspan="4"></th>
     </tr>
@@ -16,6 +19,3 @@
   </tbody>
 </table>
 
-<br>
-
-<%= link_to 'New Blog', new_blog_path %>
